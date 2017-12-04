@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "919815158506",
+    "firebase_url": "https://cometconnect-3d740.firebaseio.com",
+    "project_id": "cometconnect-3d740",
+    "storage_bucket": "cometconnect-3d740.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919815158506:android:acc3cf49c02d84ad",
+        "android_client_info": {
+          "package_name": "com.example.jasonhutchinson.cometconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919815158506-d14c8ma988iu8glorte2qhkedtrg6fja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jasonhutchinson.cometconnect",
+            "certificate_hash": "3b65f6309a898518e94ab4d9be22817d964ddb78"
+          }
+        },
+        {
+          "client_id": "919815158506-f7jpjjeo2rb8l1726do96ti8a7v265c2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyctgsj54EaDIib34nxaE4EVbOZLi-EFk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919815158506-f7jpjjeo2rb8l1726do96ti8a7v265c2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
