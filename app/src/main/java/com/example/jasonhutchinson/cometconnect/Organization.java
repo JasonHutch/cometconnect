@@ -10,6 +10,8 @@ public class Organization {
     public String description;
     public String contact; //holds info for president and advisor
     public String socialMedia;
+    public String orgID;
+    public int numMembers = 0;
 
             public Organization(String name, String description, String contact, String socialMedia){
                 this.name = name;
@@ -18,7 +20,7 @@ public class Organization {
                 this.socialMedia = socialMedia;
 
             }
-
+            //GETTER METHODS
             public String getName(){
                 return name;
     }
@@ -31,4 +33,24 @@ public class Organization {
             public String getSocialMedia(){
                 return socialMedia;
             }
+
+            //SETTER METHODS
+            public void setName(String name){
+                this.name = name;
+            }
+            public void setDescription(String description){
+                this.description = description;
+            }
+            public void setContact(String contact){
+                this.contact = contact;
+            }
+            public void setSocialMedia(String socialMedia){
+                this.socialMedia = socialMedia;
+            }
+
+            //METHODS
+            public void addMember(){
+                this.numMembers++;
+            }
+
 }

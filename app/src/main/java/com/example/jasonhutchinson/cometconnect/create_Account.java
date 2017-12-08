@@ -33,10 +33,9 @@ import org.json.JSONObject;
 public class create_Account extends AppCompatActivity {
 
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference(); // refrence to root of friebase JSON tree
-    DatabaseReference nameRef = mRootRef.child("name"); //creating a location "condition" underneath root
-    DatabaseReference emailRef = mRootRef.child("email");
-    DatabaseReference passRef = mRootRef.child("pass");
-    DatabaseReference major = mRootRef.child("major");
+    DatabaseReference usersRef = mRootRef.child("Users");
+    DatabaseReference institutionRef = mRootRef.child("Institution");
+    DatabaseReference organizationRef = institutionRef.child("Organizations");
     DatabaseReference conditionRef = mRootRef.child("condition");
     private FirebaseDatabase database;
     private FirebaseAuth firebaseAuth;
@@ -92,11 +91,11 @@ public class create_Account extends AppCompatActivity {
     }
 
     private void register_User(){
-        String userID = mRootRef.push().getKey();
-        String email = etemail.getText().toString().trim();
+        String userID = mRootRef.push().getKey(); //push node generating key  grab key as string
+        String email = etemail.getText().toString().trim(); // get email from field, convert to string, and get rid of white space
         String password = etpassword.getText().toString().trim();
-        User user = new User(email,password,userID);
-        mRootRef.child(userID).setValue(user);
+        User user = new User(email,password,userID); // create a new user
+        usersRef.child(userID).setValue(user); // create a new user child with email, and set node to new user
         progressDialog.setMessage("Registering User...");
         progressDialog.show();
 

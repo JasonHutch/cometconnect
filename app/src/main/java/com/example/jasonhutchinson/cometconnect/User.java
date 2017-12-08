@@ -13,6 +13,7 @@ public class User {
     public String password;
     public String major;
     public String userId;
+    public String institution;
 
     public User(){
 
