@@ -23,6 +23,8 @@
         </activity>
         <activity android:name=".create_Account" />
         <activity android:name=".UserAreaActivity"/>
+        <activity android:name=".createInstitution"/>
+        <activity android:name=".Create_org"/>
 
 
 

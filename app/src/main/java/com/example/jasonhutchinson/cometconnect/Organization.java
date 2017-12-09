@@ -11,13 +11,13 @@ public class Organization {
     public String contact; //holds info for president and advisor
     public String socialMedia;
     public String orgID;
+    public String institution;
     public int numMembers = 0;
 
-            public Organization(String name, String description, String contact, String socialMedia){
+            public Organization(String name, String description, String institution){
                 this.name = name;
                 this.description = description;
-                this.contact = contact;
-                this.socialMedia = socialMedia;
+                this.institution = institution;
 
             }
             //GETTER METHODS

@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton register_button;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
-
+    private TextView instText;
     TextView greetings_Text;
 
 
@@ -70,8 +70,18 @@ public class MainActivity extends AppCompatActivity {
          etPassword = (EditText) findViewById(R.id.home_password);
          signin_button = (ImageButton) findViewById(R.id.home_signin);
          register_button = (ImageButton) findViewById(R.id.home_register);
+         instText = (TextView) findViewById(R.id.regInstText);
          progressDialog = new ProgressDialog(this);
          firebaseAuth = FirebaseAuth.getInstance();
+
+
+         instText.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent instIntent = new Intent(MainActivity.this, createInstitution.class);
+                 MainActivity.this.startActivity(instIntent);
+             }
+         });
 
 
         register_button.setOnClickListener(new View.OnClickListener() {

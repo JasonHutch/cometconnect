@@ -8,4 +8,8 @@ public class Instittution {
 
     public String name;
 
+    public Instittution(String name){
+        this.name = name;
+    }
+
 }

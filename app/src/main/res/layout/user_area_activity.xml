@@ -33,12 +33,8 @@
 
     <TextView
         android:id="@+id/current_date"
-        android:layout_width="330dp"
+        android:layout_width="368dp"
         android:layout_height="124dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:textAppearance="@android:style/TextAppearance.Material.Title"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/textView"
@@ -50,15 +46,33 @@
 
     <ListView
         android:id="@+id/list"
-        android:layout_width="352dp"
-        android:layout_height="344dp"
+        android:layout_width="384dp"
+        android:layout_height="279dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925" />
+        app:layout_constraintVertical_bias="0.65" />
+
+    <ImageButton
+        android:id="@+id/addNewOrgButton"
+        android:layout_width="106dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991"
+        app:srcCompat="@drawable/plus" />
 
 </android.support.constraint.ConstraintLayout>
