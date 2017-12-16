@@ -1,5 +1,7 @@
 package com.example.jasonhutchinson.cometconnect;
 
+import java.util.Map;
+
 /**
  * Created by Jason on 12/7/2017.
  */
@@ -12,6 +14,7 @@ public class Organization {
     public String socialMedia;
     public String orgID;
     public String institution;
+    public Map<String, User> orgMembers;
     public int numMembers = 0;
 
             public Organization(String name, String description, String institution){
@@ -33,6 +36,7 @@ public class Organization {
             public String getSocialMedia(){
                 return socialMedia;
             }
+            public String getOrgID(){return orgID;}
 
             //SETTER METHODS
             public void setName(String name){
@@ -49,8 +53,11 @@ public class Organization {
             }
 
             //METHODS
-            public void addMember(){
+            public void addMember(User nUser){
+                String userKey = nUser.getUserId();
+                orgMembers.put(userKey,nUser);
                 this.numMembers++;
             }
+
 
 }
