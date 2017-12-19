@@ -19,6 +19,7 @@ android {
 }
 
 dependencies {
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.google.firebase:firebase-auth:11.6.0'

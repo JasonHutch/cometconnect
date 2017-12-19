@@ -54,6 +54,7 @@ public class create_Account extends AppCompatActivity {
 
         etemail = (EditText) findViewById(R.id.user_email);
         etpassword = (EditText) findViewById(R.id.user_password);
+        String name = usersRef.getKey();
 
 
 

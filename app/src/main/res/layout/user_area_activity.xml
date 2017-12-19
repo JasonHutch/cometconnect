@@ -75,4 +75,34 @@
         app:layout_constraintVertical_bias="0.991"
         app:srcCompat="@drawable/plus" />
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        />
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/search_view"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        app:searchBackground="@color/colorPrimary"
+        app:searchSuggestionBackground="@color/colorPrimary"
+        app:searchCloseIcon="@drawable/ic_action_navigation_close"
+        app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+        app:searchSuggestionIcon="@drawable/ic_suggestion"
+
+        />
+    
+    <ListView
+        android:id="@+id/lstview"
+        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:divider="#806236"
+        android:dividerHeight="1dp">
+
+    </ListView>
 </android.support.constraint.ConstraintLayout>
+
